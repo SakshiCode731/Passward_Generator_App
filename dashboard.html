@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styele.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+ 
+  </head>
+  <body>
+    <div class="container">
+      <h2>Generate a <br> <span>
+        Random Password
+      </span></h2>
+
+      <div class="PasswordBox">
+        <input type="text" id ="Password"
+        placeholder="Password" readonly>
+        <span class="material-symbols-outlined">
+          content_copy
+       </span>
+      </div>
+
+      <div class="lengthRow">
+        <p>Password Length</p>
+        <span id="slideerValue"></span>
+      </div>
+      <input type="range" id="lengthSlider" min="4" max="20">
+
+      <div class="row">
+        <input type="radio">
+         <label for="uppercase"
+        class="includeLabel">Include Uppercase Letters 
+        (A-Z)</label>
+        <input type="checkbox" id="uppercase">
+      </div>
+
+       <div class="row">
+        <input type="radio">
+         <label for="uppercase"
+        class="includeLabel">Include Lowercase Letters 
+        (a-z)</label>
+        <input type="checkbox" id="lowercase">
+      </div>
+
+       <div class="row">
+        <input type="radio">
+         <label for="uppercase"
+        class="includeLabel">Include Symbols
+        (#@-!)</label>
+        <input type="checkbox" id="symbols">
+      </div>
+
+      <div class="row">
+        <input type="radio">
+         <label for="uppercase"
+        class="includeLabel">Include Numbers
+        (0-9)</label>
+        <input type="checkbox" id="numbers">
+      </div>
+
+      <button type="button" id="generatebtn">
+        <span class="material-symbols-outlined">electric_bolt</span>
+          Generate Password
+        </button>
+
+    </div>
+  </div>
+</div>
+    <script src="generator.js"></script>
+  </body>
+</html>

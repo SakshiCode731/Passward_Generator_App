@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Arial";
+  box-sizing: border-box;
+}
+body{
+  background:rgb(199, 191, 191) ;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display:grid;
+  place-content: center;
+}
+
+.container{
+  background: white;
+  padding: 10px 30px;
+  width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
+h2{
+  margin: 15px 5px;
+  color: rgb(4, 4, 132);
+  font-size: 600;
+  margin-bottom: 30px;
+}
+
+h2 span{
+  text-decoration: 4px underline rgb(4, 4, 132);
+  text-underline-offset: 10px;
+}
+
+.PasswordBox{
+  position: relative;
+  margin: 15px 0px;
+}
+
+#Password{
+  width: 100%;
+  padding: 10px 20px;
+  outline: 0;
+  border: 3px solid rgb(8, 8, 203);
+  border-radius: 5px;
+  color: blue;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#Password::placeholder{
+  font-weight: 400;
+}
+
+.PasswordBox span{
+  position: absolute;
+  top: 25%;
+  right: 10px;
+  font-size: 28px;
+  color: 28px;
+  color: rgb(8, 8, 203);
+  font-weight: 900;
+}
+
+.lengthRow{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.lengthRow p{
+  color: rgb(8, 8, 203);
+}
+
+#lengthSlider{
+  appearance: none;
+  background: blue;
+  width: 100%;
+  height: 5px;
+  outline: none;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+#lengthSlider::-webkit-slider-thumb{
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: rgb(8, 8, 203);
+  border: 4px solid rgb(210, 204, 204);
+  border-radius: 50px;
+  outline: 2px solid rgb(8, 8, 203);
+  cursor: pointer;
+}
+
+.row{
+  margin: 15px 0px;
+  position: relative;
+  box-shadow: 0 0 5px rgba(107, 107, 107, 0.4);
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+
+}
+
+.row label{
+  margin-inline: 5px;
+  font-weight: 600;
+}
+
+.checkbox{
+  color:rgb(8, 8, 203);
+  cursor: pointer;
+  font-size: 28px;
+}
+
+button{
+  position: relative;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background:rgb(8, 8, 203) ;
+  color: rgb(210, 204, 204);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 0;
+  border: 0;
+  margin-block: 10px;
+  font-size: 18px;
+}
+
+button span{
+  margin-inline: 5px;
+}
