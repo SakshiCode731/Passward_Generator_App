@@ -119,6 +119,11 @@ h2 span{
     font-size: 28px;
 }
 
+.row input[type="checkbox"] {
+  display: none;
+}
+
+
 button{
     position: relative;
     width: 100%;

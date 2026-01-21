@@ -14,11 +14,12 @@
       </span></h2>
 
       <div class="PasswordBox">
-        <input type="text" id ="Password"
+        <input type="text" id ="password"
         placeholder="Password" readonly>
-        <span class="material-symbols-outlined">
+        <span id="copyIcon" class="material-symbols-outlined">
           content_copy
        </span>
+       
       </div>
 
       <div class="lengthRow">
@@ -27,48 +28,53 @@
       </div>
       <input type="range" id="lengthSlider" min="4" max="20">
 
-      <div class="row">
-        <span class="material-symbols-outlined checkbox">
-          radio_button_unchecked
-        </span>
-         <label for="uppercase"class="includeLabel">Include Uppercase Letters (A-Z)</label>
-        <input type="checkbox" id="uppercase">
-      </div>
+     <div class="row">
+  <span class="material-symbols-outlined checkbox">
+    radio_button_unchecked
+  </span>
+  <label for="uppercase" class="includeLabel">
+    Include Uppercase Letters (A-Z)
+  </label>
+  <input type="checkbox" id="uppercase">
+</div>
 
-       <div class="row">
-          <span class="material-symbols-outlined checkbox">
-          radio_button_unchecked
-        </span>
-         <label for="uppercase"class="includeLabel">Include Lowercase Letters (a-z)</label>
-        <input type="checkbox" id="lowercase">
-      </div>
+<div class="row">
+  <span class="material-symbols-outlined checkbox">
+    radio_button_unchecked
+  </span>
+  <label for="lowercase" class="includeLabel">
+    Include Lowercase Letters (a-z)
+  </label>
+  <input type="checkbox" id="lowercase">
+</div>
 
-       <div class="row">
-          <span class="material-symbols-outlined checkbox">
-          radio_button_unchecked
-        </span>
-         <label for="uppercase"class="includeLabel">Include Symbols(#@-!)</label>
-        <input type="checkbox" id="symbols">
-      </div>
+<div class="row">
+  <span class="material-symbols-outlined checkbox">
+    radio_button_unchecked
+  </span>
+  <label for="symbols" class="includeLabel">
+    Include Symbols (#@-!)
+  </label>
+  <input type="checkbox" id="symbols">
+</div>
 
-      <div class="row">
-        <span class="material-symbols-outlined checkbox">
-          radio_button_unchecked
-        </span>
-         <label for="uppercase"
-        class="includeLabel">Include Numbers
-        (0-9)</label>
-        <input type="checkbox" id="numbers">
-      </div>
+<div class="row">
+  <span class="material-symbols-outlined checkbox">
+    radio_button_unchecked
+  </span>
+  <label for="numbers" class="includeLabel">
+    Include Numbers (0-9)
+  </label>
+  <input type="checkbox" id="numbers">
+</div>
+
 
       <button type="button" id="generatebtn">
         <span class="material-symbols-outlined">electric_bolt</span>
           Generate Password
         </button>
 
-    </div>
-  </div>
-</div>
+     </div>
     <script src="generator.js"></script>
   </body>
 </html>
