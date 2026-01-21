@@ -84,8 +84,12 @@ function generatePassword(length, uppercase, lowercase, symbols, numbers) {
 
 /* copy password */
 copyIcon.addEventListener('click', () => {
-  if (password.value === "") return
+  if (password.value === "") 
 
   navigator.clipboard.writeText(password.value)
   copyIcon.innerText = 'check'
+
+  setTimeout(() => {
+    copyIcon.innerText = 'content_copy'
+  },2000)
 })
